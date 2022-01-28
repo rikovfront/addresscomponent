@@ -1,0 +1,91 @@
+.address-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.address-wrapper > label {
+  margin-right: 10px;
+}
+
+.address-select-wrapper {
+  width: 400px;
+  height: 28px;
+  position:relative
+}
+
+.address-list {
+  min-width: 400px;
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  z-index: 10;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, .3);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 150px;
+  overflow: auto;
+  position: absolute;
+  margin-top: 10px;
+}
+
+.address-item {
+  padding: 5px 20px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.address-item:hover {
+  background-color: #F1F1F1;
+}
+
+.address-select {
+  border: 1px solid #DDD;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+  background-color: #FFF;
+  box-sizing: content-box;
+}
+
+.address-select > input {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+  border: 0;
+  outline: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0 3px 0 10px;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.address-select.empty > input {
+  border: 1px solid rgb(90, 142, 240);
+}
+
+.address-select.error > input {
+  border: 1px solid rgb(243, 56, 56) !important;
+}
+
+.address-select > input:focus {
+  border: 1px solid rgb(50, 115, 235);
+}
+
+.address-select > input::-webkit-search-cancel-button {
+  -webkit-appearance: searchfield-cancel-button;
+}
+
+.fadeout {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 1s, opacity 0.5s linear;
+}
+
+.fadein {
+  visibility: visible;
+  transition: visibility 1s, opacity 0.5s linear;
+  opacity: 1;
+}

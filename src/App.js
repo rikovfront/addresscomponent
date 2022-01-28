@@ -1,11 +1,11 @@
 import React from 'react';
-import { Counter } from './features/counter/Counter';
+import { Address } from './features/address/Address';
 import './App.css';
 
 const App = () => (
-  <div>
-    <Counter />
-  </div>
+  <>
+    <Address />
+  </>
 );
 
 export default App;
